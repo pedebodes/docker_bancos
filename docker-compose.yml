@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: teste
+      POSTGRES_PASSWORD: teste
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./data:/var/lib/postgresql/data"
+
+
+
